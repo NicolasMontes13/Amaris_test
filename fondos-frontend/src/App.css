@@ -1,0 +1,89 @@
+body {
+  background: #f4f6fa;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f6fa;
+}
+
+.App-header {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+.App-logo {
+  height: 60px;
+  margin: 0 auto 24px auto;
+  display: block;
+}
+
+.card {
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 20px 18px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2d3748;
+  font-size: 1.3rem;
+}
+
+pre {
+  background: #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+input, select, button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #225ea8;
+}
+.error {
+  color: #e53e3e;
+  font-weight: bold;
+}
+.success {
+  color: #38a169;
+  font-weight: bold;
+}

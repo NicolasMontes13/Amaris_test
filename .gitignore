@@ -1,0 +1,19 @@
+# Archivos y carpetas a ignorar en el control de versiones
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyd
+*.so
+*.egg-info/
+.DS_Store
+Thumbs.db
+*.env
+node_modules/
+build/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

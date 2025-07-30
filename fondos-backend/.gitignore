@@ -1,0 +1,19 @@
+test/
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyd
+*.so
+    build/
+dist/
+*.egg-info/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.env
+config.ini
+secrets.json
