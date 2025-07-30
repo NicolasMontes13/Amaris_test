@@ -8,13 +8,10 @@ import TransactionForm from './components/TransactionForm';
 import { useState } from 'react';
 
 function App() {
-  // Estado para controlar qué componente mostrar.
-  // 'active' guarda el nombre del componente a mostrar. Por defecto es '' (ninguno).
+
   const [active, setActive] = useState('');
 
-  // Esta función retorna el componente correspondiente según el valor de 'active'.
-  // Así, solo se renderiza el componente cuando el usuario hace clic en el botón.
-  // Función para volver al menú principal
+
   function goHome() {
     setActive('');
   }
@@ -37,16 +34,12 @@ function App() {
     }
   }
 
-  // La interfaz muestra los botones y el componente seleccionado
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*
-          Botonera principal:
-          Cada botón cambia el estado 'active' para mostrar el componente correspondiente.
-          Así, la petición al backend solo se hace cuando el usuario lo solicita.
-        */}
+        {}
         <div style={{display:'flex', gap:'12px', marginBottom:'24px', flexWrap:'wrap', justifyContent:'center'}}>
           <button onClick={() => setActive('funds')}>Ver Fondos</button>
           <button onClick={() => setActive('transactions')}>Ver Transacciones</button>
@@ -54,10 +47,7 @@ function App() {
           <button onClick={() => setActive('subscriptions')}>Ver Suscripciones</button>
           <button onClick={() => setActive('transactionForm')}>Nueva Transacción</button>
         </div>
-        {/*
-          Aquí se renderiza el componente seleccionado.
-          Solo uno se muestra a la vez, dentro de una tarjeta visual.
-        */}
+        {}
         {renderComponent()}
       </header>
     </div>
